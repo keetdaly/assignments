@@ -10,18 +10,23 @@ public class Student {
     private String course;
     private ArrayList<Module> modules;
 
+    public Student() {
+
+    }
+
     public Student(String name, int age, String dateOfBirth, String id, String course, ArrayList<Module> modules) {
         this.setName(name);
         this.setAge(age);
         this.setDateOfBirth(dateOfBirth);
         this.setId(id);
-        this.setUsername(getUsername());
+        this.username = getUsername();
         this.setCourse(course);
         this.setModules(modules);
     }
 
-    private String getUsername() {
-        return getName() + getAge();
+    public String getUsername() {
+        String name = getName();
+        return name.replace(" ", "_") + getAge();
     }
 
     public String getName() {
@@ -54,10 +59,6 @@ public class Student {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 
     public String getCourse() {

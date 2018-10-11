@@ -10,6 +10,10 @@ public class Course {
     private DateTime startDate;
     private DateTime endDate;
 
+    public Course() {
+
+    }
+
     public Course(String name, ArrayList modules, ArrayList students, DateTime startDate, DateTime endDate) {
         this.setName(name);
         this.setModules(modules);

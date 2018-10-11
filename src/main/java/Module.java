@@ -7,6 +7,10 @@ public class Module {
     private ArrayList<Student> students;
     private ArrayList<Course> associatedCourses;
 
+    public Module(){
+
+    }
+
     public Module(String name, String id, ArrayList students, ArrayList associatedCourses) {
         this.setName(name);
         this.setId(id);
