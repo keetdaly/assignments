@@ -26,7 +26,7 @@ public class Student {
 
     public String getUsername() {
         String name = getName();
-        return name.replace(" ", "_") + getAge();
+        return name.replace(" ", "") + getAge();
     }
 
     public String getName() {

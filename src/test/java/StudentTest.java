@@ -1,8 +1,5 @@
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class StudentTestTest {
@@ -15,7 +12,7 @@ class StudentTestTest {
         student.setAge(21);
         String username = student.getUsername();
 
-        assertEquals("John_Smyth21", username);
+        assertEquals("JohnSmyth21", username);
     }
 
 }
