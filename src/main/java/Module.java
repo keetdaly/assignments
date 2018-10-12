@@ -11,7 +11,7 @@ public class Module {
 
     }
 
-    public Module(String name, String id, ArrayList students, ArrayList associatedCourses) {
+    public Module(String name, String id) {
         this.setName(name);
         this.setId(id);
         this.setStudents(students);

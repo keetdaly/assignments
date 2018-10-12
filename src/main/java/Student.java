@@ -14,7 +14,7 @@ public class Student {
 
     }
 
-    public Student(String name, int age, String dateOfBirth, String id, String course, ArrayList<Module> modules) {
+    public Student(String name, int age, String dateOfBirth, String id, String course) {
         this.setName(name);
         this.setAge(age);
         this.setDateOfBirth(dateOfBirth);

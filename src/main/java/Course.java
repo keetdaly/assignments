@@ -14,7 +14,7 @@ public class Course {
 
     }
 
-    public Course(String name, ArrayList modules, ArrayList students, DateTime startDate, DateTime endDate) {
+    public Course(String name, DateTime startDate, DateTime endDate) {
         this.setName(name);
         this.setModules(modules);
         this.setStudents(students);
