@@ -7,14 +7,14 @@ public class Student {
     private String dateOfBirth;
     private String id;
     private String username;
-    private String course;
+    private Course course;
     private ArrayList<Module> modules;
 
     public Student() {
 
     }
 
-    public Student(String name, int age, String dateOfBirth, String id, String course) {
+    public Student(String name, int age, String dateOfBirth, String id, Course course) {
         this.setName(name);
         this.setAge(age);
         this.setDateOfBirth(dateOfBirth);
@@ -60,11 +60,11 @@ public class Student {
         this.id = id;
     }
 
-    public String getCourse() {
+    public Course getCourse() {
         return course;
     }
 
-    public void setCourse(String course) {
+    public void setCourse(Course course) {
         this.course = course;
     }
 
