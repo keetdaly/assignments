@@ -21,7 +21,6 @@ public class Student {
         this.setId(id);
         this.username = getUsername();
         this.setCourse(course);
-        this.setModules(modules);
     }
 
     public String getUsername() {

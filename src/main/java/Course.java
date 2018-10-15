@@ -16,8 +16,6 @@ public class Course {
 
     public Course(String name, DateTime startDate, DateTime endDate) {
         this.setName(name);
-        this.setModules(modules);
-        this.setStudents(students);
         this.setStartDate(startDate);
         this.setEndDate(endDate);
     }

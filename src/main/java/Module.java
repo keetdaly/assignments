@@ -14,8 +14,6 @@ public class Module {
     public Module(String name, String id) {
         this.setName(name);
         this.setId(id);
-        this.setStudents(students);
-        this.setAssociatedCourses(associatedCourses);
     }
 
     public String getName() {
