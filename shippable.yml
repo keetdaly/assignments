@@ -1,4 +1,13 @@
 language: java
 
 jdk:
-  - oraclejdk8
+ - oraclejdk8
+ 
+after_success:
+   - mvn clean cobertura:cobertura
+   - mvn test
+   
+notifications:
+ email: 
+  recipients:
+   - keithdaly14@hotmail.com
