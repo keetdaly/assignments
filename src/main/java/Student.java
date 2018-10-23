@@ -19,13 +19,16 @@ public class Student {
         this.setAge(age);
         this.setDateOfBirth(dateOfBirth);
         this.setId(id);
-        this.username = getUsername();
+        this.setUsername(name);
         this.setCourse(course);
     }
 
-    public String getUsername() {
-        String name = getName();
-        return name.replace(" ", "") + getAge();
+    public void setUsername(String name) {
+        this.username = name.replace(" ", "") + getAge();
+    }
+
+    public String getUsername(){
+        return username;
     }
 
     public String getName() {
